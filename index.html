@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobile Legends Bang Bang</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+	<nav>
+		<a href="index.html"><img src="img/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+
+			<ul>
+				<li><a href="index.html" class="active">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+
+<div class="text-box">
+	<h1>Mobile Legends: Bang Bang</h1>
+	<p>A multiplayer online battle arena (MOBA) game designed for mobile phones. <br>The game is free-to-play and is only monetized through in-game purchases like characters and skins.</p>
+	<a href="about.html" class="hero-btn">Visit Us To learn More</a>
+</div>	
+</section>
+
+<!-------- Emblems -------->
+
+<section class="emblem">
+	<h1>Emblems</h1>
+	<p>Designed to give you a small boost on your attributes and supply an innate effect. <br> Each emblems which corresponds to a distinct role or set of specialties.</p>
+
+	<div class="row">
+		<div class="emblem-col">
+			<img src="img/emblem/physical.png">
+			<div class="layer">
+				<h3>Physical Emblem</h3>
+			</div>
+		</div>
+		<div class="emblem-col">
+			<img src="img/emblem/magic.png">
+			<div class="layer">
+				<h3>Magic Emblem</h3>
+			</div>
+		</div>
+		<div class="emblem-col">
+			<img src="img/emblem/fighter.png">
+			<div class="layer">
+				<h3>Fighter Emblem</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="emblem">
+	<div class="row">
+		<div class="emblem-col">
+			<img src="img/emblem/mage.png">
+			<div class="layer">
+				<h3>Mage Emblem</h3>
+			</div>
+		</div>
+		<div class="emblem-col">
+			<img src="img/emblem/assassin.png">
+			<div class="layer">
+				<h3>Assassin Emblem</h3>
+			</div>
+		</div>
+		<div class="emblem-col">
+			<img src="img/emblem/marksman.png">
+			<div class="layer">
+				<h3>Marksman Emblem</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="emblem">
+	<div class="row">
+		<div class="emblem-col">
+			<img src="img/emblem/support.png">
+			<div class="layer">
+				<h3>Support Emblem</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-------- Heroes -------->
+
+<section class="heroes">
+	<h1>Heroes</h1>
+	<p>Some playable Heroes in Mobile Legends Bang Bang.</p>
+
+	<div class="row">
+		<div class="heroes-col">
+			<img src="img/heroes/layla.png">
+			<h3>Layla</h3>
+			<p>"A Skillful Marksman with An Energy Gun".</p>
+		</div>
+		<div class="heroes-col">
+			<img src="img/heroes/saber.png">
+			<h3>Saber</h3>
+			<p>"A Master of Swords in search of himself".</p>
+		</div>
+		<div class="heroes-col">
+			<img src="img/heroes/zilong.png">
+			<h3>Zilong</h3>
+			<p>"Descendant of the Great Dragon, guards the Cadia Riverlands".</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="heroes-col">
+			<img src="img/heroes/selena.png">
+			<h3>Selena</h3>
+			<p>"Dark Elf girl who fell into the Abyss".</p>
+		</div>
+		<div class="heroes-col">
+			<img src="img/heroes/yin.png">
+			<h3>Yin</h3>
+			<p>"A gifted Kungfu boy possessed by an Evil God".</p>
+		</div>
+		<div class="heroes-col">
+			<img src="img/heroes/lancelot.png">
+			<h3>Lancelot</h3>
+			<p>"A Young Lad who Infuses Magic Essence into His Swordsmanship".</p>
+		</div>
+	</div>
+</section>
+
+<!-------- Download And Play -------->
+
+<section class="dpa">
+	<h1>DOWNLOAD AND PLAY NOW</h1>
+	<a href="#" class="hero-btn">PLAY</a>
+</section>
+
+<!-------- Footer -------->
+
+<section class="footer">
+	<p>&copy; 2016-2023 www.mlbb.com</p>
+	<p>Villa Mendez, Mogpog, Marinduque, Philippines</p>
+</section>
+
+<!-------- JavaScript for Toggle Menu -------->
+<script>
+	var	navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0"
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px"
+	}
+</script>
+
+</body>
+</html>

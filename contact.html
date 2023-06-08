@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobile Legends Bang Bang</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="img/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html" class="active">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Contact Us</h1>
+</section>
+
+<!-------- contact us content -------->
+
+<section class="contact-us">
+	
+	<div class="row">
+		<div class="contact-col">
+			<h1>Contact Us</h1>
+			<p>If there's anything you want to ask. Feel free to contact me anytime by clicking those icons at the right side.</p>
+		</div>
+		<div class="contact-col">
+			<a href="https://www.facebook.com/profile.php?id=100071369756590&mibextid=ZbWKwL"><img src="img/contact/fb.png"></a>
+			<br>
+			<a href="mailto:jtan4932@gmail.com"><img src="img/contact/gmail.webp"></a>
+		</div>
+	</div>
+</section>
+
+<!-------- Footer -------->
+
+<section class="footer">
+	<p>&copy; 2016-2023 www.mlbb.com</p>
+	<p>Villa Mendez, Mogpog, Marinduque, Philippines</p>
+</section>
+
+<!-------- JavaScript for Toggle Menu -------->
+<script>
+	var	navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0"
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px"
+	}
+</script>
+
+</body>
+</html>

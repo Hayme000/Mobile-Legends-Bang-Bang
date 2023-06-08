@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mobile Legends Bang Bang</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="img/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html" class="active">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>About Us</h1>
+</section>
+
+<!-------- about us content -------->
+
+<section class="about-us">
+	
+	<div class="row">
+		<div class="about-col">
+			<h1>About the Developer</h1>
+			<p>Hi I'm James Tan the developer of this website thank you for visiting my first website that I created. </p>
+			<p>I'm currently taking classes in Marinduque State College studying Bachelor of Science in Information Technology sophomore student.</p>
+		</div>
+		<div class="about-col">
+			<img src="img/profile.jpg">
+		</div>
+	</div>
+</section>
+
+<!-------- Footer -------->
+
+<section class="footer">
+	<p>&copy; 2016-2023 www.mlbb.com</p>
+	<p>Villa Mendez, Mogpog, Marinduque, Philippines</p>
+</section>
+
+<!-------- JavaScript for Toggle Menu -------->
+<script>
+	var	navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0"
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px"
+	}
+</script>
+
+</body>
+</html>
